@@ -3,6 +3,10 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/matheus.goes/.oh-my-zsh
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export PATH=$PATH:$JAVA_HOME
+export CLICOLOR=1
+export TERM=xterm-256color
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -83,15 +87,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# User Configs
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-export MAVEN=/Development/maven/bin
-export PATH=$PATH:$JAVA_HOME:$MAVEN
-
-# Vim Colors
-export CLICOLOR=1
-export TERM=xterm-256color
 
 # Show Files
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
