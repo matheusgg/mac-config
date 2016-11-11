@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/matheus.goes/.oh-my-zsh
+export ZSH=/Users/$(whoami)/.oh-my-zsh
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export PATH=$PATH:$JAVA_HOME
 export CLICOLOR=1
