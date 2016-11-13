@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/Matheus/.gitignore_global
+	excludesfile = /Users/$(whoami)/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -10,4 +10,4 @@
 	name = Matheus
 	email = matheus.ggoes@outlook.com
 [commit]
-	template = /Users/Matheus/.stCommitMsg
+	template = /Users/$(whoami)/.stCommitMsg
